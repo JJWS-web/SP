@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Footer Styles */
+header,
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Main Container Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+iframe {
+    /* Set an initial height as needed */
+    border: 1px solid #ddd; /* Add a border for better visibility */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .content-container {
+        max-width: 100%;
+        margin: 5% auto;
+    }
+
+    .content-container img {
+        border-radius: 0;
+    }
+
+    .custom-link,
+    .contact-info {
+        color: #333;
+    }
+
+    .group {
+        text-align: left;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: relative;
+    height: auto;
+}
+
+form h3 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input,
+form textarea,
+form select {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #3498db;
+}
+
+form button {
+    padding: 15px;
+    background: #a82b2b;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Content Container Styles */
+.content-container {
+    text-align: center;
+    max-width: 90%;
+    margin: 2% auto;
+}
+
+/* Content Container Image Styles */
+.content-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Content Container Paragraph Styles */
+.content-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Custom Link and Contact Info Styles */
+.custom-link,
+.contact-info {
+    color: gray;
+}
+
+/* Forum and Primair Styles */
+.forum {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px;
+}
+
+.group {
+    text-align: center;
+}
